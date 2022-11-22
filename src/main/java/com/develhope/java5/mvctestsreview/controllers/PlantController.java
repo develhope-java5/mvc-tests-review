@@ -33,7 +33,6 @@ public class PlantController {
 
     @GetMapping("/{id}")
     @ResponseBody
-    @ResponseStatus(HttpStatus.FOUND)
     public ResponseEntity<Plant> getOne(@PathVariable Long id) {
         Optional<Plant> result = service.getOne(id);
 
